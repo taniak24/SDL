@@ -15,7 +15,7 @@ int main(int args, char *argv[])
     SDL_Window *window = SDL_CreateWindow("SDL WORLD", 500, 500, WIDTH, HEIGHT, SDL_WINDOW_ALLOW_HIGHDPI);
 
     //check in console if it's correctly installed
-    if(NULL == window)
+    if(window == NULL)
     {
         cout << "could not create a window";
     }
